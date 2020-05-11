@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,18 @@
     <div class="container">
         <form>
             <div>
-                <label for="number">Number</label>
+                <form>
+                    <label>What language are you practicing?</label>
+                    <select id = "dropdown">
+                        <option value = "en">English</option>
+                        <option value = "ko">Korean</option>
+                        <option value = "ja">Japanese</option>
+                        <option value = "it">Italian</option>
+                        <option value = "de">German</option>
+                        <option value = "es">Spanish</option>
+                        <option value = "fr">French</option>
+                    </select>
+                </form>
             </div>
             <div>
                 <button class="get-pokemon">Get Pokemon</button>
@@ -21,15 +33,25 @@
         <label for="pokemon-name">Name: </label>
         <ul class="pokemon-name"></ul>
 
-        <label for="pokemon-color">Type: </label>
-        <ul class="pokemon-color"></ul>
+        <label for="pokemon-fact">Fact: </label>
+        <ul class="pokemon-fact"></ul>
 
         <div id="imgStyle1" class="message">
             <img src="" id="image" height="130px"/>
-            <img src="" id="image-back" height="130px"/>
+            <img src="" id="image-back" height="130px" alt=""/>
+        </div>
+
+        <label for="pokemon-question">Question: </label>
+        <ul class="pokemon-question"></ul>
+
+        <div>
+            <input type="text" id="user-answer" placeholder="Type answer here"></input>
+            <button class="get-answer">Submit</button>
         </div>
 
     </div>
-    <script src="app.js"></script>
+    
+    <script src="app.js"></script>
+    
 </body>
 </html>
